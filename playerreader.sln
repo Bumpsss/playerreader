@@ -1,17 +1,25 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playerreader", "playerreader\playerreader.csproj", "{2503A16B-4439-4CE1-A52C-274B2C5C528A}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playerreader", "playerreader\playerreader.csproj", "{D7AB968B-20AE-4E6D-88D2-E0187864FC8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|anycpu = Debug|anycpu
-		Release|anycpu = Release|anycpu
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2503A16B-4439-4CE1-A52C-274B2C5C528A}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{2503A16B-4439-4CE1-A52C-274B2C5C528A}.Debug|anycpu.Build.0 = Debug|anycpu
-		{2503A16B-4439-4CE1-A52C-274B2C5C528A}.Release|anycpu.ActiveCfg = Release|anycpu
-		{2503A16B-4439-4CE1-A52C-274B2C5C528A}.Release|anycpu.Build.0 = Release|anycpu
+		{D7AB968B-20AE-4E6D-88D2-E0187864FC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AB968B-20AE-4E6D-88D2-E0187864FC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AB968B-20AE-4E6D-88D2-E0187864FC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AB968B-20AE-4E6D-88D2-E0187864FC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B9E4322-4C57-4B00-834E-EB16BB6F4564}
 	EndGlobalSection
 EndGlobal

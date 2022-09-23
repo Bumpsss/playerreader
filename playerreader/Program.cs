@@ -47,7 +47,7 @@ namespace PlayerReader
             TShock.RestApi.RegisterRedirect("/readplayers", "/readplayers");
             TShock.RestApi.Register(new SecureRestCommand("/readplayers", PlayerRead, RestPermissions.restuserinfo));
         }
-        private object PlayerFind(IParameterCollection parameters)
+        private object PlayerFind(EscapedParameterCollection parameters)
         {
             string name = parameters["player"];
             if (string.IsNullOrWhiteSpace(name))
@@ -60,7 +60,7 @@ namespace PlayerReader
             }
             else if (found.Count == 0)
             {
-                
+
                 UserAccount account = TShock.UserAccounts.GetUserAccountByName(name);
                 if (account != null)
                 {
@@ -116,7 +116,7 @@ namespace PlayerReader
         [Permission(RestPermissions.restuserinfo)]
         [Noun("player", true, "The player to lookup", typeof(String))]
         [Token]
-        private object PlayerRead (RestRequestArgs args)
+        private object PlayerRead(RestRequestArgs args)
         {
             var ret = PlayerFind(args.Parameters);
             if (ret is RestObject)
@@ -125,7 +125,7 @@ namespace PlayerReader
             }
 
             TSPlayer player = (TSPlayer)ret;
-            
+
 
             object items = new
             {
